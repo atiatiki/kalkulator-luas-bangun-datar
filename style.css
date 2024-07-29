@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif; /* Menggunakan font Arial atau font default sans-serif */
+    background-color: #f0f0f0; /* Warna latar belakang */
+    display: flex; /* Menampilkan elemen secara fleksibel */
+    justify-content: center; /* Menyusun elemen ke tengah secara horizontal */
+    align-items: center; /* Menyusun elemen ke tengah secara vertikal */
+    height: 100vh; /* Tinggi viewport */
+    margin: 0; /* Menghilangkan margin bawaan */
+}
+
+.container {
+    background-color: #fff; /* Warna latar belakang */
+    padding: 20px; /* Padding dalam container */
+    border-radius: 5px; /* Mengatur sudut container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    width: 100%; /* Lebar container */
+    max-width: 400px; /* Lebar maksimum container */
+}
+
+h1 {
+    text-align: center; /* Posisi teks di tengah */
+    margin-bottom: 20px; /* Margin bawah */
+    font-size: 28px; /* Ukuran font */
+}
+
+.form {
+    display: grid; /* Menampilkan form dengan grid */
+    gap: 15px; /* Jarak antar elemen */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Margin bawah untuk grup form */
+}
+
+label {
+    margin-bottom: 8px; /* Margin bawah untuk label */
+}
+
+select, input[type="number"], button {
+    padding: 10px; /* Padding untuk input dan tombol */
+    font-size: 16px; /* Ukuran font */
+    border: 1px solid #ccc; /* Border dengan warna abu-abu */
+    border-radius: 4px; /* Sudut border */
+    width: 100%; /* Lebar 100% */
+    box-sizing: border-box; /* Memperhitungkan padding dan border dalam lebar elemen */
+}
+
+button {
+    background-color: #007bff; /* Warna latar tombol */
+    color: white; /* Warna teks */
+    border: none; /* Tanpa border */
+    cursor: pointer; /* Pointer ketika dihover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna latar saat dihover */
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        grid-template-columns: 1fr; /* Menyesuaikan jumlah kolom pada tampilan layar kecil */
+    }
+    .container {
+        width: 90%; /* Lebar container pada layar kecil */
+        padding: 10px; /* Padding container pada layar kecil */
+    }
+
+    select {
+        font-size: 14px; /* Ukuran font dropdown pada layar kecil */
+        padding: 8px; /* Padding dropdown pada layar kecil */
+        width: calc(100% - 20px); /* Lebar dropdown pada layar kecil */
+    }
+}
+
+select, input[type="number"], button {
+    text-align-last: center; /* Posisi teks dalam input dan tombol */
+    text-align: center; /* Posisi teks dalam input dan tombol */
+    font-size: 14px; /* Ukuran font */
+}
+
+h1 {
+    font-size: 24px; /* Ukuran font */
+}
